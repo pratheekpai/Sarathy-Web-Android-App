@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href='/static/first_app/index_style.css?{% now "U" %}'/>
+    <link rel="shortcut icon" href="{% static 'images/body_img21.png' %}" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- page header -->
+    <header>
+      <div class="head_background">
+        <div class="head_container container-flex">
+          <a href="">
+            <div class="web_logo container-flex">
+              <div class="logo_image">
+                <img src="{% static 'images/body_img21.png' %}" alt="" />
+              </div>
+              <div class="logo_text">
+                <h1>Sarathy</h1>
+              </div>
+            </div>
+          </a>
+          <div class="web_nav container-flex">
+            <a href="login_who"> <div class="login">Login</div></a>
+            <a href="whosignup"><div class="signup">Sign Up</div></a>
+            <a href="about"><div class="about">About us</div></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- start of body -->
+    <section class="body_head">
+      <div class="body_container">
+        <div class="body_text">
+          <h2>Possibility in every direction</h2>
+          <h4>
+            Well, join us, thrive and be a Do-Gooder
+          </h4>
+        </div>
+        <div class="body_options">
+          <a href="login_who"> <div class="get_started">Get Started</div></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- sections -->
+    <div class="site_body">
+      <section class="site_section">
+        <div class="section_container container-flex">
+          <div class="section_txt">
+            <h3>Tag Along</h3>
+            <h4>Be the master of yourselves</h4>
+          </div>
+          <div class="section_img">
+            <!--<img src="images/stopwatch.png" alt="" />-->
+          </div>
+        </div>
+      </section>
+      <section class="site_section">
+        <div class="section_container container-flex">
+          <div class="section_img">
+            <!--img class="img_sec" src="images/community.svg" alt="" />-->
+          </div>
+          <div class="section_txt">
+            <h3>"Apes together strong!"</h3>
+            <h4>
+              Join the community
+            </h4>
+          </div>
+        </div>
+      </section>
+      <section class="site_section">
+        <div class="section_container container-flex">
+          <div class="section_txt">
+            <h3>Horn Ok Please</h3>
+            <h4>
+              You mediate, We are the Mediators
+            </h4>
+          </div>
+          <div class="section_img">
+            <!--<img src="images/body_img_12.png" alt="" />-->
+          </div>
+        </div>
+      </section>
+      <section class="site_section">
+        <div class="section_container container-flex">
+          <div class="section_img">
+            <!--<img class="img_sec" src="images/body_img13.png" alt="" />-->
+          </div>
+          <div class="section_txt">
+            <h3>All India Permit</h3>
+            <h4>
+              If you have the permit you got the permit
+            </h4>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="site_section end_back">
+      <div class="section_container">
+        <div class="body_container">
+          <div class="body_options">
+            <h2>So what are you waiting for?</h2>
+            <a href="whosignup"> <div class="get_started">Get Started</div></a>
+            <div style="text-align: center; padding-top: 60px;">
+              <img src="{% static 'images/insta-icon3.jpeg' %}" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+          <p class="footer_text">Copyright &copy; Sarathy 2021</p>
+
+      </footer>
+    </div>
+    <!-- footer -->
+    <!-- <footer>
+      <p class="footer_text">Copyright &copy; Sarathy 2021</p>
+    </footer> -->
+  </body>
+</html>

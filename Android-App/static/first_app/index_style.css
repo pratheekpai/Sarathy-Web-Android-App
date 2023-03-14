@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --primary: rgba(0, 0, 0, 0.65);
+  --secondary: rgba(0, 0, 0, 0.65);
+}
+
+* {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(115, 119, 119);
+  
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head_background {
+  background-color: rgba(115, 119, 119, 0.6);
+  padding: 1rem 0;
+  margin-bottom: 0.3rem;
+}
+
+.head_background .head_container {
+  /* border: 2px solid white; */
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.head_background .head_container a {
+  text-decoration: none;
+}
+
+.head_background .head_container .web_logo,
+.head_background .head_container .web_nav {
+  width: fit-content;
+}
+
+.head_background .head_container .web_logo .logo_image {
+  margin-right: 1rem;
+  width: fit-content;
+}
+
+.head_background .head_container .web_logo .logo_text h1{
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5em;
+}
+
+.head_background .head_container .web_nav .login,
+.head_background .head_container .web_nav .signup,
+.head_background .head_container .web_nav .about{
+  margin-right: 2rem;
+  padding: 0.3rem 1rem;
+}
+
+.head_background .head_container .web_nav a{
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+
+.head_background .head_container .web_nav a .login:hover,
+.head_background .head_container .web_nav a .signup:hover,
+.head_background .head_container .web_nav a .about:hover
+{
+  cursor: pointer;
+  background-color: white;
+  color: rgb(7, 7, 7);
+  font-weight: 600;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 1.5px;
+  transition: 0.4s;
+}
+
+/* body header */
+.body_head {
+  width: 100%;
+  margin: 0;
+  padding: 8rem 0;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, var(--primary), var(--secondary)),
+    url("../images/body_img6.jpg") no-repeat center center;
+  
+  background-size: cover;
+  height: fit-content;
+  margin-bottom: 0.3rem;
+}
+
+.body_head .body_container {
+  /* border: 1px solid black; */
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  padding: 1rem;
+  /* color: aliceblue; */
+}
+
+.body_head .body_container .body_text h2{
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.body_head .body_container .body_text h4{
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.body_container .body_options {
+  width: fit-content;
+  margin: auto;
+}
+.body_container .body_options a {
+  text-decoration: none;
+  width: 100%;
+}
+
+.body_container .body_options a .get_started {
+  background-color: rgb(105, 103, 103);
+  font-weight: 600;
+  width: fit-content;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+}
+.body_container .body_options a .get_started:hover {
+  letter-spacing: 2px;
+  transition: 0.5s;
+  background-color: white;
+  color: rgb(14, 13, 13);
+}
+
+.site_body{
+  background: linear-gradient(90deg, var(--primary), var(--secondary)),
+    url("../images/body_img7.jpg") no-repeat center center;
+  background-size: cover;
+  height: fit-content;
+}
+
+.site_section {
+  width: 100%;
+  background-color: #d6d2d200;
+  padding: 2rem 0;
+}
+
+.site_section .section_container {
+  width: 70%;
+  box-sizing: border-box;
+  margin: auto;
+  padding: 1.5rem 0;
+  font-size: 1.5rem;
+}
+
+.site_section .section_container .section_txt,
+.site_section .section_container .section_img {
+  width: 45%;
+  box-sizing: border-box;
+  height: inherit;
+  padding: 1.5rem 0;
+}
+
+.site_section .section_container .section_txt h3{
+  margin: 0.5rem 0;
+  font-size: 1.8em;
+  font-weight: 600;
+}
+
+.site_section .section_container .section_txt h4{
+  margin: 0.5rem 0;
+  font-size: 1.3em;
+  font-weight: 500;
+}
+
+.site_section .section_container .section_img img {
+  width: 60%;
+  height: inherit;
+}
+
+.site_section .section_container .section_img .img_sec{
+  float: right;
+}
+
+.site_section .section_container .body_container .body_options a .get_started{
+  background-color: rgb(105, 103, 103);
+  margin: 1rem auto;
+}
+
+.site_section .section_container .body_container .body_options a .get_started:hover{
+  letter-spacing: 2px;
+  transition: 0.5s;
+  background-color: white;
+  color: rgb(12, 12, 12);
+}
+
+.end_back{
+  margin-top: 0.3rem;
+  background: linear-gradient(90deg, var(--primary), var(--secondary)),
+    url("../images/body_img8.jpg") no-repeat center center;
+  background-size: cover;
+  height: fit-content;
+  padding: 0;
+}
+
+footer {
+  padding: 5px;
+}
+
+footer .footer_text {
+  color: rgba(240, 248, 255, 0.7);
+  text-align: center;
+  font-size: 1.5rem;
+}

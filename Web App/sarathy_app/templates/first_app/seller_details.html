@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="shortcut icon" href="{% static 'images/body_img21.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href='/static/first_app/login_style_seller_details.css?{% now "U" %}' />
+  </head>
+  <style>
+    input[type=submit]{
+        background-color: #323332;
+        border: none;
+        color: white;
+        padding: 8px 16px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+        font-size: 1.5rem;
+        border-radius: 5px;
+
+      }
+      .form_sub {
+        width: fit-content;
+        margin: auto;
+      }
+  </style>
+  <body>
+    <section>
+      <div class="heading">
+        <a href="index">
+          <div class="web_logo container-flex">
+            <div class="logo_image">
+              <img src="{% static 'images/body_img21.png' %}" alt="" />
+            </div>
+            <div class="logo_text">
+              <h1>Sarathy</h1>
+            </div>
+          </div>
+        </a>
+      </div>
+
+        <form action="{% url 'seller_login' %}" method="POST" >
+          <div class="form-group">
+            {{ sd_form.comp_name }}
+            {% csrf_token %}
+          </div>
+          <div class="form-group">
+            {{ sd_form.comp_address }}
+            {% csrf_token %}
+          </div>
+          <div class="form-group">
+            {{ sd_form.phone }}
+            {% csrf_token %}
+          </div>
+          <div class="form-group">
+            {{ sd_form.trade_license_no }}
+            {% csrf_token %}
+          </div>
+          <div class="form_sub">
+            <input type="submit" class="submit" value="Continue"/>
+          </div>
+          
+        </form>
+
+      <footer>
+        <p class="footer_text">Copyright &copy; Sarathy 2021</p>
+      </footer>
+    </section>
+  </body>
+</html>

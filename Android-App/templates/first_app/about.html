@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="{% static 'first_app/about_style.css' %}" />
+    <link rel="shortcut icon" href="{% static 'images/body_img21.png' %}" type="image/x-icon" />
+  </head>
+  <body>
+    <section>
+      <div class="heading">
+        <a href="index">
+          <div class="web_logo container-flex">
+            <div class="logo_image">
+              <img src="{% static 'images/body_img21.png' %}" alt="" />
+            </div>
+            <div class="logo_text">
+              <h1>Sarathy</h1>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="site_info">
+        <div class="info_head">
+          <h1>A platform which interlinks Sarathys(Truck Drivers) to producers and farmers.</h1>
+        </div>
+        <div class="info_sub">
+          <h2>
+            We aim to design a platform which simplifies the procedure of dealings and transactions 
+            between the transporter and the producer.
+          </h2>
+        </div>
+      </div>
+
+      <div class="dev_text">
+        <h3>More about the Devs</h3>
+      </div>
+
+      <div class="dev_det container-flex">
+        <div class="dev-photo">
+          <img src="{% static 'images/profile_img1.jpg' %}" alt="profile photo 1" />
+        </div>
+        <div class="dev_info">
+          <h1>Om Rohit Kansagra</h1>
+          <h1>4NM19CS123</h1>
+          <h1>Section C</h1>
+        </div>
+      </div>
+
+      <div class="dev_det container-flex">
+        <div class="dev_info">
+          <h1>Pratheek R. Pai</h1>
+          <h1>4NM19CS135</h1>
+          <h1>Section C</h1>
+        </div>
+        <div class="dev-photo1">
+          <img src="{% static 'images/profile_img2.jpg' %}" alt="profile photo 2" />
+        </div>
+      </div>
+
+      <div class="go_back">
+        <a href="index" class="nav_back">
+          <div class="nav_back_info">
+            <div class="nav_back_text">
+              <h3>Go back</h3>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <footer>
+        <p class="footer_text">Copyright &copy; Sarathy 2021</p>
+      </footer>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="shortcut icon" href="{% static 'images/body_img21.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href='/static/first_app/login_style_seller_details.css?{% now "U" %}' />
+    <style>
+      input[type=submit]{
+          background-color: #323332;
+          border: none;
+          color: white;
+          padding: 8px 16px;
+          text-decoration: none;
+          margin: 4px 2px;
+          cursor: pointer;
+          font-size: 1.5rem;
+          border-radius: 5px;
+  
+        }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="heading">
+        <a href="index">
+          <div class="web_logo container-flex">
+            <div class="logo_image">
+              <img src="{% static 'images/body_img21.png' %}" alt="" />
+            </div>
+            <div class="logo_text">
+              <h1>Sarathy</h1>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="user_det">
+        <form action="job_seller", method="POST">
+          <div class="form_heading">
+            <h2>Seller Login</h2>
+          </div>
+    
+          <div class="form-group">
+            {{ seller_login.username }}
+            {% csrf_token %}
+          </div>
+          <div class="form-group">
+            {{ seller_login.password }}
+            {% csrf_token %}
+          </div>
+          <div class="form-group">
+            {{ seller_login.email }}{% csrf_token %}
+          </div>
+          <div class="form_sub">
+            <input type="submit" class="submit" value="Continue"/>
+          </div>
+          
+        </form>
+      </div>
+
+      <footer>
+        <p class="footer_text">Copyright &copy; Sarathy 2021</p>
+      </footer>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary: rgba(0, 0, 0, 0.65);
+  --secondary: rgba(0, 0, 0, 0.65);
+}
+
+* {
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  /* padding: 0; */
+  background-color: rgba(15, 15, 15, 0.8);
+}
+
+.container-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+section {
+  width: 100%;
+  margin: 0;
+  padding: 2.5rem 0 0 0;
+  background: linear-gradient(90deg, var(--primary), var(--secondary)),
+    url("../images/body_img17.jpg") no-repeat center center;
+  background-size: cover;
+  height: fit-content;
+}
+
+section .heading {
+  width: fit-content;
+  margin: auto;
+  /* margin-top: 3rem; */
+}
+
+section .heading a {
+  text-decoration: none;
+}
+
+section .heading a .web_logo {
+  width: fit-content;
+}
+
+section .heading a .web_logo .logo_image {
+  margin-right: 1rem;
+  width: fit-content;
+}
+
+section .heading a .web_logo .logo_image img {
+  width: 100%;
+}
+
+section .heading a .web_logo .logo_text h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 3em;
+}
+
+section .user_det {
+  width: 50%;
+  margin: auto;
+  margin-top: 4rem;
+  /* border: 2px solid white; */
+  border-radius: 10px;
+  /* padding: 1rem; */
+}
+
+section .user_det form {
+  /* border: 1px solid black; */
+  width: 90%;
+  margin: auto;
+}
+
+section .user_det form .form_heading h2 {
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.form-group,
+section .user_det .form_input {
+  width: 50%;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: aliceblue;
+  margin: 2rem auto;
+}
+
+section .user_det .form_input input[type=radio] {
+  border: 0px;
+  width: 100%;
+  height: 2em;
+}
+
+.form-control,
+section .user_det .form_input input {
+  border: none;
+  font-size: 1.5rem;
+  background: aliceblue;
+  color: rgb(94, 91, 91);
+  width: 100%;
+}
+
+.form-control:focus{
+  outline: none;
+}
+
+section .user_det .subm_btn {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: fit-content;
+}
+
+section .user_det .subm_btn div {
+  background-color: rgb(105, 103, 103);
+  width: fit-content;
+  padding: 0.5rem 2.3rem;
+  border: none;
+  border-radius: 8px;
+}
+
+section .user_det .subm_btn div:hover {
+  background-color: rgb(105, 103, 103);
+  letter-spacing: 1px;
+  transition: 0.4s;
+}
+section .user_det .signup_redirect {
+  font-size: 1.3rem;
+}
+section .user_det .signup_redirect p a {
+  text-decoration: none;
+}
+
+section .user_det .signup_redirect p a:hover {
+  text-decoration: underline;
+  color: rgb(105, 103, 103);
+  transition: 0.4s;
+}
+
+footer {
+  margin-top: 10rem;
+  padding: 2rem 0 1rem 0;
+}
+
+footer .footer_text {
+  color: rgba(240, 248, 255, 0.7);
+  text-align: center;
+  font-size: 1.5rem;
+}

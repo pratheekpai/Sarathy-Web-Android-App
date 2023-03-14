@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="shortcut icon" href="{% static 'images/body_img21.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href='/static/first_app/login_style_whosignup.css?{% now "U" %}' />
+  </head>
+  <body>
+    <section>
+      <div class="heading">
+        <a href="index">
+          <div class="web_logo container-flex">
+            <div class="logo_image">
+              <img src="{% static 'images/body_img21.png' %}" alt="" />
+            </div>
+            <div class="logo_text">
+              <h1>Sarathy</h1>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="user_det">
+        <form action="">
+          <div class="form_heading">
+            <h2>What do you do?</h2>
+          </div>
+    
+          
+          <div class="select_user container-flex">
+            <a class="subm_btn" href="username_pass_truckdriver">
+              <div class="submit">Driver</div>
+            </a>
+            <p></p>
+            <a class="subm_btn" href="username_pass_seller">
+              <div class="submit">Provider</div>
+            </a>
+          </div>
+          
+        </form>
+      </div>
+
+      <footer>
+        <p class="footer_text">Copyright &copy; Sarathy 2021</p>
+      </footer>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="{% static 'first_app/signup_style.css' %}">
+    <link rel="shortcut icon" href="{% static '/images/favicon.png' %}" type="image/x-icon">
+
+</head>
+<body>
+    <section>
+        <div class="heading">
+            <a href="index">
+              <div class="web_logo container-flex">
+                <div class="logo_image">
+                  <img src="{% static 'images/logo_img.png' %}" alt="" />
+                </div>
+                <div class="logo_text">
+                  <h1>Sarathy</h1>
+                </div>
+              </div>
+            </a>
+        </div>
+
+        <div class="user_det">
+            <form action="">
+                <div class="form_heading">
+                    <h2>Sign Up</h2>
+                </div>
+                <div class="form_input"><input type="text" placeholder="Username"></div>
+                <div class="form_input"><input type="text" placeholder="Email id"></div>
+                <div class="form_input"><input type="password" name="" id="" placeholder="Password"></div>
+                <a class="subm_btn" href="next">
+                    <div class="submit">
+                        Let's Go
+                    </div>
+                </a>
+                <div class="login_redirect">
+                    <p>Already have an account? <a href="login">Login</a></p>
+                </div>
+            </form>
+        </div>
+
+        <footer>
+            <p class="footer_text">Copyright &copy; Sarathy 2021</p>
+        </footer>    
+
+    </section>
+
+   
+</body>
+</html>
